@@ -24,5 +24,12 @@ namespace WPLDemoLogin
         {
             InitializeComponent();
         }
+        private void LogInButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (NameTextBox.Text.Equals("admin") && PasswordTextBox.Text.Equals("admin"))
+            {
+                InfoTextBlock.Text = "U wordt ingelogd.";
+            }
+        }
     }
 }
